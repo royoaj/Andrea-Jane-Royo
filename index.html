@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrea Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>Andrea</h1>
+  <div class="links">
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('education')">Education</a>
+    <a onclick="showSection('skills')">Skills</a>
+    <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active home">
+  <img src="image/08374711-bd73-48d4-895f-3e92f94ac679.jpg" class="profile">
+  <h2>Andrea Jane T. Royo</h2>
+  <p class="highlight">BS Information Technology Student</p>
+  <p>
+    I am a first-year BS Information Technology student who is passionate about learning new technologies. 
+    I enjoy exploring programming, web design, and computer systems. 
+    I am motivated to improve my skills and gain more knowledge for my future career.
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="box">
+    <p>
+      My interest in Information Technology started during senior high school.
+      I became curious about how websites and systems work.
+    </p>
+    <p>
+      I am hardworking, responsible, and willing to learn new things.
+      I believe I can become successful in the IT field through dedication.
+    </p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <!-- ELEMENTARY -->
+  <div class="edu-box">
+    <img src="image/45bffb9c-cad4-4b55-9634-3a7a7cba3b63.jpg" class="edu-logo">
+    <div>
+      <h3>Datu Sailila Elementary School</h3>
+      <p>Elementtry Education</p>
+    </div>
+  </div>
+
+  <!-- JUNIOR/SENIOR HIGH -->
+  <div class="edu-box">
+    <img src="image/af5ebcef-d8a0-410b-8d14-67d1c0f31e33.jpg" class="edu-logo">
+    <div>
+      <h3>Isulan National High School</h3>
+      <p>Senior High School (HUMSS)</p>
+    </div>
+  </div>
+
+  <!-- COLLEGE -->
+  <div class="edu-box">
+    <img src="image/d3bf3143-6153-4351-b92c-22d0be2a671c.jpg" class="edu-logo">
+    <div>
+      <h3>San Isidro College</h3>
+      <p>Bachelor of Science in Information Technology</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skill-container">
+    <div class="skill-box"><i class="fas fa-computer"></i> Basic Computer Skills</div>
+    <div class="skill-box"><i class="fas fa-code"></i> Programming Fundamentals</div>
+    <div class="skill-box"><i class="fas fa-comments"></i> Communication Skills</div>
+    <div class="skill-box"><i class="fas fa-file-word"></i> Microsoft Office</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-container">
+
+    <div class="project-box">
+      <img src="image/Screenshot (1).png" class="project-img">
+      <h3>Portfolio Website</h3>
+      <p>
+        A personal website created using HTML and CSS to showcase my skills and information.
+      </p>
+    </div>
+
+    <div class="project-box">
+      <img src="image/Screenshot (2).png" class="project-img">
+      <h3>Basic System Project</h3>
+      <p>
+        A simple system design project demonstrating basic planning and structure in IT.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-icons">
+    <a href="https://www.facebook.com/andrea.royo.777" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="mailto:royoaj@sic.edu.ph">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Andrea Jane T. Royo | BSIT Student</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function showSection(id) {
+  const sections = document.querySelectorAll("section");
+  sections.forEach(sec => sec.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>

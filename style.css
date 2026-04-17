@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #1e1b2e;
+  color: #ede9fe;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: #2a234a;
+}
+
+nav h1 {
+  color: #a78bfa;
+}
+
+.links a {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.links a:hover {
+  color: #a78bfa;
+}
+
+/* SECTION (MEDIUM + CENTERED) */
+section {
+  display: none;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section.active {
+  display: block;
+}
+
+/* TEXT */
+p {
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+}
+
+.profile {
+  width: 140px;
+  border-radius: 50%;
+  border: 3px solid #a78bfa;
+}
+
+/* BOX */
+.box {
+  background: #2a234a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* EDUCATION */
+.edu-box {
+  display: flex;
+  align-items: center;
+  background: #2a234a;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.edu-logo {
+  width: 60px;
+  margin-right: 15px;
+}
+
+/* SKILLS */
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill-box {
+  background: #4c1d95;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.skill-box i {
+  margin-right: 8px;
+  color: #c4b5fd;
+}
+
+/* PROJECTS */
+.project-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project-box {
+  background: #2a234a;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  font-size: 24px;
+  color: #ede9fe;
+  background: #2a234a;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.contact-icons a:hover {
+  background: #a78bfa;
+  color: #1e1b2e;
+}
+
+
+footer {
+  background: #2a234a;
+  text-align: center;
+  padding: 20px;
+  margin-top: 490px;
+  border-top: 2px solid #a78bfa;
+}
+
+footer p {
+  font-size: 14px;
+  color: #c4b5fd;
+}
